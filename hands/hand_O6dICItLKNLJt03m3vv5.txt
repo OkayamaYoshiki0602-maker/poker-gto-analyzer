@@ -1,0 +1,40 @@
+Hand #O6dICItLKNLJt03m3vv5
+
+2026/02/09 00:12 · 6-Max NLH (0.5/1)
+
+Players:
+BTN tarosushi (100bb) 6♠3♥   ±0bb
+SB  oidoboku  (100bb) K♥T♥   +14.9bb
+BB  q0O***    (100bb) T♣3♣   -1bb
+UTG lossbreath(100bb) 7♥5♦   ±0bb
+HJ  oKW***    (100bb) 8♦2♣   ±0bb
+CO  okayama   (100bb) 9♠9♣   -15.5bb
+
+Preflop:
+UTG lossbreath Fold
+HJ  oKW***     Fold
+CO  okayama    Raise 2.5bb
+BTN tarosushi  Fold
+SB  oidoboku   Raise 7.5bb (3-bet)
+BB  q0O***     Fold
+CO  okayama    Call 7.5bb
+
+Flop: T♠ 7♠ 6♣
+SB  oidoboku   Bet 8bb
+CO  okayama    Call 8bb
+
+Turn: 2♥
+SB  oidoboku   Bet 40bb
+CO  okayama    Fold
+
+Result:
+oidoboku wins 30.4bb
+Rake: 1.6bb
+
+Final Board: T♠ 7♠ 6♣ 2♥
+
+Hero (okayama): 9♠9♣
+Villain (oidoboku): K♥T♥
+
+Analysis Status: ✅ Completed
+Analysis Report: /workspace/reports/hand_analysis_O6dICItLKNLJt03m3vv5.md

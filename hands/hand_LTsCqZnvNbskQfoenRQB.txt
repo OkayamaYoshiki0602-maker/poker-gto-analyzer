@@ -1,0 +1,44 @@
+Hand #LTsCqZnvNbskQfoenRQB
+
+2026/02/08 22:09 · 6-Max NLH (0.5/1)
+
+Players:
+HJ      72o     (100bb)  9♣6♠   ±0bb
+CO      oda     (100bb)  8♦7♣   ±0bb
+BTN     gusuman (100bb)  4♦3♣   ±0bb
+SB      TOM     (100bb)  Q♦5♣   -0.5bb
+BB      hayassi (100bb)  5♥3♥   -4.33bb
+UTG     okayama (100bb)  Q♥Q♣   +4.37bb
+
+Preflop:
+UTG okayama Raise 2.5bb
+HJ  72o     Fold
+CO  oda     Fold
+BTN gusuman Fold
+SB  TOM     Fold
+BB  hayassi Call 2.5bb
+
+Flop: J♠ 6♥ 3♦
+BB  hayassi Check
+UTG okayama Bet 1.83bb
+BB  hayassi Call 1.83bb
+
+Turn: K♠
+BB  hayassi Check
+UTG okayama Check
+
+River: 7♦
+BB  hayassi Check
+UTG okayama Check
+
+Result:
+okayama wins 8.7bb
+Rake: 0.46bb
+
+Final Board: J♠ 6♥ 3♦ K♠ 7♦
+
+Hero (okayama): Q♥Q♣
+Villain (hayassi): 5♥3♥
+
+Analysis Status: ✅ Completed
+Analysis Report: /workspace/reports/hand_analysis_LTsCqZnvNbskQfoenRQB.md
