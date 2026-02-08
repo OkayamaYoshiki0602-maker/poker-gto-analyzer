@@ -8,10 +8,12 @@ import json
 from pathlib import Path
 from datetime import datetime
 import sys
+from typing import Dict, List, Any, Optional
 
 # ローカルモジュールのインポート
 sys.path.insert(0, str(Path(__file__).parent))
 from gto_evaluator import GTOEvaluator
+from hand_data_processor import HandDataProcessor
 
 
 class PokerGTOAgent:
@@ -21,13 +23,15 @@ class PokerGTOAgent:
         self.data_dir = Path(__file__).parent.parent / 'data'
         self.reports_dir = Path(__file__).parent.parent / 'reports'
         self.hands_data = []
+        self.processor = HandDataProcessor()
     
-    def analyze_hands(self, hand_ids: list):
+    def analyze_hands(self, hand_ids: list, hand_data_list: Optional[List[Dict[str, Any]]] = None):
         """
         複数のハンドIDから包括的な分析レポートを生成
         
         Args:
             hand_ids: ハンドID のリスト
+            hand_data_list: ユーザー提供のハンドデータ（オプション）
         """
         
         print("""
@@ -38,11 +42,18 @@ class PokerGTOAgent:
 📊 分析を実行中...
 """)
         
-        # サンプルデータ（本来は API から取得）
-        sample_hands = self._generate_sample_analysis(hand_ids)
+        # ハンドデータを取得・処理
+        if hand_data_list:
+            # ユーザー提供データを使用
+            processed_hands = self._process_user_data(hand_ids, hand_data_list)
+            print("✅ ユーザー提供データを使用")
+        else:
+            # サンプルデータを使用（API実装待ち）
+            processed_hands = self._generate_sample_analysis(hand_ids)
+            print("⚠️ サンプルデータを使用（実データ未実装）")
         
         # 分析実行
-        report = self._generate_gto_report(sample_hands)
+        report = self._generate_gto_report(processed_hands)
         
         # レポート保存
         self._save_report(report)
@@ -50,30 +61,106 @@ class PokerGTOAgent:
         print("\n✅ 分析完了！\n")
         return report
     
+    def _process_user_data(self, hand_ids: list, hand_data_list: List[Dict[str, Any]]) -> list:
+        """ユーザー提供のハンドデータを処理"""
+        processed_hands = []
+        
+        for i, hand_id in enumerate(hand_ids):
+            if i < len(hand_data_list):
+                # ユーザーデータを使用
+                raw_data = hand_data_list[i].copy()
+                raw_data['hand_id'] = hand_id
+                
+                # データを標準化
+                processed_data = self.processor.process_hand_data(raw_data)
+                
+                # GTO分析用に変換
+                analysis_data = {
+                    'hand_id': hand_id,
+                    'position': processed_data['hero']['position'],
+                    'hand': processed_data['hero']['hand'],
+                    'action': processed_data['hero']['action'],
+                    'profit_bb': processed_data['hero']['profit_bb'],
+                    'result': processed_data['hero']['result'],
+                    'opponent_type': self._get_primary_opponent_type(processed_data['opponents']),
+                    'spr': processed_data['spr'],
+                    'spr_category': processed_data['spr_category'],
+                    'board_texture': processed_data['board_texture'],
+                    'board': processed_data['board'],
+                    'stack_bb': processed_data['hero']['stack_bb']
+                }
+                
+                processed_hands.append(analysis_data)
+            else:
+                # データが不足している場合はサンプルデータ
+                processed_hands.append(self._create_sample_hand(hand_id))
+        
+        return processed_hands
+    
+    def _get_primary_opponent_type(self, opponents: List[Dict[str, Any]]) -> str:
+        """主要な対戦相手のタイプを取得"""
+        if not opponents:
+            return 'UNKNOWN'
+        
+        # アクティブな対戦相手の中で最初のタイプを返す
+        for opponent in opponents:
+            if opponent.get('active', True) and opponent.get('type') != 'FOLD':
+                return opponent.get('type', 'UNKNOWN')
+        
+        return opponents[0].get('type', 'UNKNOWN')
+    
+    def _create_sample_hand(self, hand_id: str) -> Dict[str, Any]:
+        """サンプルハンドデータを作成"""
+        return {
+            'hand_id': hand_id,
+            'position': 'BTN',
+            'hand': 'AK',
+            'action': 'raise',
+            'profit_bb': -50,
+            'result': 'LOSE',
+            'opponent_type': 'TAG',
+            'spr': 20,
+            'spr_category': 'short',
+            'board_texture': {'type': 'DRY', 'description': 'ドライボード'},
+            'board': ['As', 'Kh', '7d'],
+            'stack_bb': 100
+        }
+    
     def _generate_sample_analysis(self, hand_ids: list) -> list:
         """サンプル分析データを生成（実装用プレースホルダー）"""
         
-        # 実際には、各 hand_id に対して API から詳細データを取得
-        sample_data = [
-            {
-                'hand_id': hand_ids[0] if hand_ids else 'J674e1buxOGyzZB15uwY',
-                'position': 'BTN',
-                'hand': 'AK',
-                'action': 'raise',
-                'profit_bb': -50,
-                'result': 'LOSE',
-                'opponent_type': 'TAG',
-            },
-            {
-                'hand_id': hand_ids[1] if len(hand_ids) > 1 else 'QZVSZQq4RedGPnlQZ3gs',
-                'position': 'MP',
-                'hand': 'QQ',
-                'action': 'raise',
-                'profit_bb': 75,
-                'result': 'WIN',
-                'opponent_type': 'FISH',
-            },
-        ]
+        sample_data = []
+        for i, hand_id in enumerate(hand_ids):
+            if i == 0:
+                sample_data.append({
+                    'hand_id': hand_id,
+                    'position': 'BTN',
+                    'hand': 'AK',
+                    'action': 'raise',
+                    'profit_bb': -50,
+                    'result': 'LOSE',
+                    'opponent_type': 'TAG',
+                    'spr': 20,
+                    'spr_category': 'short',
+                    'board_texture': {'type': 'DRY', 'description': 'ドライボード'},
+                    'board': ['As', 'Kh', '7d'],
+                    'stack_bb': 100
+                })
+            else:
+                sample_data.append({
+                    'hand_id': hand_id,
+                    'position': 'MP',
+                    'hand': 'QQ',
+                    'action': 'raise',
+                    'profit_bb': 75,
+                    'result': 'WIN',
+                    'opponent_type': 'FISH',
+                    'spr': 40,
+                    'spr_category': 'medium',
+                    'board_texture': {'type': 'WET', 'description': 'ウェットボード'},
+                    'board': ['Qh', '9s', '8d'],
+                    'stack_bb': 100
+                })
         
         return sample_data
     

@@ -38,13 +38,21 @@ def analyze():
     try:
         data = request.get_json()
         hand_ids = data.get('hand_ids', [])
+        hand_data_list = data.get('hand_data', [])  # 新機能：ハンドデータ
         notes = data.get('notes', '')
         
         if not hand_ids:
             return jsonify({'error': 'ハンドID が必要です'}), 400
         
         # 分析実行
-        report = agent.analyze_hands(hand_ids)
+        if hand_data_list:
+            # ユーザー提供データを使用
+            report = agent.analyze_hands(hand_ids, hand_data_list)
+            analysis_type = "実データ分析"
+        else:
+            # サンプルデータを使用
+            report = agent.analyze_hands(hand_ids)
+            analysis_type = "サンプルデータ分析"
         
         # リポジトリに保存
         github_status = save_to_repository(hand_ids, report, notes)
@@ -53,6 +61,7 @@ def analyze():
             'success': True,
             'report': report,
             'hand_count': len(hand_ids),
+            'analysis_type': analysis_type,
             'github_status': github_status,
             'timestamp': datetime.now().isoformat()
         })
