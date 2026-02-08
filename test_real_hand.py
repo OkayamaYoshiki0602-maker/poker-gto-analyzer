@@ -17,8 +17,16 @@ def test_real_hand():
     """実ハンドデータでテスト"""
     
     # 実ハンドデータ（LTsCqZnvNbskQfoenRQB）
+    # Hand #LTsCqZnvNbskQfoenRQB
+    # 2026/02/08 22:09 · 6-Max NLH (0.5/1)
+    # UTG okayama: QQ (100bb) → WIN +4.37bb
+    # BB hayassi: 53h (100bb) → LOSE -4.33bb
+    # Board: Js 6h 3d Ks 7d
     hand_data = [
         {
+            "hand_id": "LTsCqZnvNbskQfoenRQB",
+            "date": "2026/02/08 22:09",
+            "game_type": "6-Max NLH (0.5/1)",
             "hero_position": "UTG",
             "hero_hand": "QQ",
             "hero_action": "raise",
