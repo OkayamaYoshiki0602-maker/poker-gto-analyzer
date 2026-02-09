@@ -869,7 +869,136 @@ UTGmaty Bet 59bb
 BBokayama Fold
 Result
 maty wins 78.5bb
-Rake: 4bb"""
+Rake: 4bb""",
+
+        # Hand 11
+        """Hand #aMla8UsUzbFrH4pCS2UX
+
+2026/02/09 12:44 · 6-Max NLH (0.5/1)
+CO
+Vanilla
+(100bb)
+T♠
+9♦
+±0bb
+BTN
+CUU***
+(100bb)
+J♠
+4♦
+±0bb
+SB
+39Niki
+(100bb)
+K♣
+T♦
++4.5bb
+BB
+okayama
+(100bb)
+J♦
+3♦
+-5bb
+UTG
+Levi
+(100bb)
+7♥
+2♣
+±0bb
+HJ
+qdQ***
+(100bb)
+4♠
+3♥
+±0bb
+Preflop
+UTGLevi Fold
+HJqdQ*** Fold
+COVanilla Fold
+BTNCUU*** Fold
+SB39Niki Raise 3bb
+BBokayama Call 3bb
+Flop
+K♦
+2♥
+2♦
+SB39Niki Bet 2bb
+BBokayama Call 2bb
+Turn
+9♥
+SB39Niki Bet 10bb
+BBokayama Fold
+Result
+39Niki wins 9.5bb
+Rake: 0.5bb""",
+
+        # Hand 12
+        """Hand #7eAHAowiFG7HugAzLvb7
+
+2026/02/09 12:44 · 6-Max NLH (0.5/1)
+BB
+momokuro
+(100bb)
+T♣
+3♠
+-1bb
+UTG
+39Niki
+(100bb)
+A♥
+Q♦
+-31.55bb
+HJ
+Chunichi
+(100bb)
+Q♠
+7♥
+±0bb
+CO
+okayama
+(100bb)
+A♦
+K♣
++29.82bb
+BTN
+Daichi
+(100bb)
+6♠
+3♣
+±0bb
+SB
+Himadajin
+(100bb)
+K♠
+7♠
+-0.5bb
+Preflop
+UTG39Niki Raise 2bb
+HJChunichi Fold
+COokayama Raise 7bb
+BTNDaichi Fold
+SBHimadajin Fold
+BBmomokuro Fold
+UTG39Niki Call 7bb
+Flop
+K♥
+Q♣
+J♠
+UTG39Niki Check
+COokayama Bet 5.17bb
+UTG39Niki Call 5.17bb
+Turn
+4♠
+UTG39Niki Check
+COokayama Check
+River
+4♦
+UTG39Niki Check
+COokayama Bet 19.38bb
+UTG39Niki Call 19.38bb
+Result
+okayama wins 61.37bb
+Rake: 3.23bb"""
 ]
 
 
