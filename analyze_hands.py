@@ -1647,7 +1647,207 @@ HJkaguraVT Raise 17.1bb
 SBokayama Fold
 Result
 kaguraVT wins 27.07bb
-Rake: 1.43bb"""
+Rake: 1.43bb""",
+
+        # Hand 23
+        """Hand #iazr5Jx7nEuFTwptEusd
+
+2026/02/10 07:45 · 6-Max NLH (0.5/1)
+CO
+momokuro
+(100bb)
+8♥
+4♥
+±0bb
+BTN
+biv6b
+(100bb)
+K♣
+5♦
+±0bb
+SB
+okayama
+(100bb)
+A♣
+7♣
+-41.16bb
+BB
+kyonkyon
+(100bb)
+K♠
+9♦
+-1bb
+UTG
+SOS
+(100bb)
+K♦
+Q♦
++38.16bb
+HJ
+neruneru
+(100bb)
+Q♠
+5♥
+±0bb
+Preflop
+UTGSOS Raise 2bb
+HJneruneru Fold
+COmomokuro Fold
+BTNbiv6b Fold
+SBokayama Raise 7bb
+BBkyonkyon Fold
+UTGSOS Call 7bb
+Flop
+J♥
+4♠
+2♦
+SBokayama Bet 5bb
+UTGSOS Call 5bb
+Turn
+K♥
+SBokayama Bet 8.33bb
+UTGSOS Call 8.33bb
+River
+2♥
+SBokayama Bet 20.83bb
+UTGSOS Call 20.83bb
+Result
+SOS wins 79.32bb
+Rake: 4bb""",
+
+        # Hand 24
+        """Hand #egZjHrdNGH0cDJEcSKWS
+
+2026/02/10 07:44 · 6-Max NLH (0.5/1)
+UTG
+saku
+(100bb)
+9♠
+2♠
+±0bb
+HJ
+momokuro
+(100bb)
+5♥
+4♣
+±0bb
+CO
+nogutaku
+(100bb)
+9♣
+8♥
+±0bb
+BTN
+okayama
+(100bb)
+Q♠
+J♠
+-46.8bb
+SB
+Iggy
+(100bb)
+K♦
+T♣
++46.4bb
+BB
+mari
+(100bb)
+Q♣
+2♣
+-3.6bb
+Preflop
+UTGsaku Fold
+HJmomokuro Fold
+COnogutaku Fold
+BTNokayama Raise 2.3bb
+SBIggy Raise 3.6bb
+BBmari Call 3.6bb
+BTNokayama Call 3.6bb
+Flop
+T♥
+9♥
+2♥
+SBIggy Check
+BBmari Check
+BTNokayama Check
+Turn
+K♣
+SBIggy Bet 10.8bb
+BBmari Fold
+BTNokayama Call 10.8bb
+River
+K♥
+SBIggy Bet 32.4bb
+BTNokayama Call 32.4bb
+Result
+Iggy wins 93.2bb
+Rake: 4bb""",
+
+        # Hand 25
+        """Hand #xftLCaJJV01NzwDqEtbF
+
+2026/02/10 07:42 · 6-Max NLH (0.5/1)
+UTG
+dddlucky
+(100bb)
+J♣
+3♠
+±0bb
+HJ
+CIRCE
+(100bb)
+A♥
+T♣
+-4bb
+CO
+8ig***
+(100bb)
+9♦
+8♠
+±0bb
+BTN
+biv6b
+(100bb)
+4♦
+3♥
+±0bb
+SB
+TabEnd
+(100bb)
+A♣
+7♥
+-0.5bb
+BB
+okayama
+(100bb)
+K♥
+Q♥
++4.07bb
+Preflop
+UTGdddlucky Fold
+HJCIRCE Raise 2.3bb
+CO8ig*** Fold
+BTNbiv6b Fold
+SBTabEnd Fold
+BBokayama Call 2.3bb
+Flop
+Q♦
+7♠
+5♠
+BBokayama Check
+HJCIRCE Bet 1.7bb
+BBokayama Call 1.7bb
+Turn
+5♦
+BBokayama Check
+HJCIRCE Check
+River
+K♣
+BBokayama Bet 6.38bb
+HJCIRCE Fold
+Result
+okayama wins 8.07bb
+Rake: 0.43bb"""
 ]
 
 
