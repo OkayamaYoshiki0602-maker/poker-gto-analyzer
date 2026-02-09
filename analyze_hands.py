@@ -998,7 +998,75 @@ COokayama Bet 19.38bb
 UTG39Niki Call 19.38bb
 Result
 okayama wins 61.37bb
-Rake: 3.23bb"""
+Rake: 3.23bb""",
+
+        # Hand 13
+        """Hand #qN8mgWMS8CVFQqyogWin
+
+2026/02/09 16:53 · 6-Max NLH (0.5/1)
+CO
+Nahte138
+(100bb)
+7♣
+4♦
+±0bb
+BTN
+okayama
+(100bb)
+K♥
+T♥
+-25.09bb
+SB
+XhZ***
+(100bb)
+A♠
+8♠
+-0.5bb
+BB
+akane
+(100bb)
+9♦
+3♣
+-1bb
+UTG
+kuwazari
+(100bb)
+9♥
+2♣
+±0bb
+HJ
+X
+(100bb)
+A♦
+A♣
++24.01bb
+Preflop
+UTGkuwazari Fold
+HJX Raise 2bb
+CONahte138 Fold
+BTNokayama Raise 7bb
+SBXhZ*** Fold
+BBakane Fold
+HJX Call 7bb
+Flop
+K♦
+J♣
+9♠
+HJX Check
+BTNokayama Bet 5.17bb
+HJX Call 5.17bb
+Turn
+3♥
+HJX Check
+BTNokayama Bet 12.92bb
+HJX Call 12.92bb
+River
+J♥
+HJX Check
+BTNokayama Check
+Result
+X wins 49.1bb
+Rake: 2.58bb"""
 ]
 
 
