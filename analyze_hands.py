@@ -802,7 +802,74 @@ COokayama Check
 BTNCindy Check
 Result
 okayama wins 6.17bb
-Rake: 0.33bb"""
+Rake: 0.33bb""",
+
+        # Hand 10
+        """Hand #1K0584LNoJIKlPE47n1p
+
+2026/02/09 10:23 · 6-Max NLH (0.5/1)
+UTG
+maty
+(100bb)
+J♠
+J♦
++37.5bb
+HJ
+saba
+(100bb)
+7♦
+6♠
+±0bb
+CO
+78k***
+(100bb)
+9♣
+4♦
+±0bb
+BTN
+seki
+(100bb)
+Q♠
+7♥
+±0bb
+SB
+OGW
+(100bb)
+J♥
+9♠
+-0.5bb
+BB
+okayama
+(100bb)
+A♣
+K♠
+-41bb
+Preflop
+UTGmaty Raise 2bb
+HJsaba Fold
+CO78k*** Fold
+BTNseki Fold
+SBOGW Fold
+BBokayama Raise 8bb
+UTGmaty Call 8bb
+Flop
+J♣
+5♦
+3♦
+BBokayama Bet 8.25bb
+UTGmaty Call 8.25bb
+Turn
+5♠
+BBokayama Bet 24.75bb
+UTGmaty Call 24.75bb
+River
+9♦
+BBokayama Check
+UTGmaty Bet 59bb
+BBokayama Fold
+Result
+maty wins 78.5bb
+Rake: 4bb"""
 ]
 
 
