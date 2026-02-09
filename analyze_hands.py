@@ -558,7 +558,72 @@ BBokayama Bet 31.9bb
 BTNRn2*** Call 31.9bb
 Result
 okayama wins 85.32bb
-Rake: 4bb"""
+Rake: 4bb""",
+
+        # Hand 6
+        """Hand #PulWv0ae0PqbAuGIoM5d
+
+2026/02/09 09:10 · 6-Max NLH (0.5/1)
+BB
+okayama
+(100bb)
+6♠
+2♠
+-4.33bb
+UTG
+fGe***
+(100bb)
+Q♥
+3♦
+±0bb
+HJ
+tatataaa
+(100bb)
+Q♣
+J♠
++4.37bb
+CO
+Rfp***
+(100bb)
+A♦
+5♣
+±0bb
+BTN
+Chappy
+(100bb)
+Q♠
+5♦
+±0bb
+SB
+KJ
+(100bb)
+9♠
+5♠
+-0.5bb
+Preflop
+UTGfGe*** Fold
+HJtatataaa Raise 2.5bb
+CORfp*** Fold
+BTNChappy Fold
+SBKJ Fold
+BBokayama Call 2.5bb
+Flop
+K♥
+6♦
+3♣
+BBokayama Check
+HJtatataaa Bet 1.83bb
+BBokayama Call 1.83bb
+Turn
+7♠
+BBokayama Check
+HJtatataaa Check
+River
+Q♦
+BBokayama Fold
+Result
+tatataaa wins 8.7bb
+Rake: 0.46bb"""
 ]
 
 
