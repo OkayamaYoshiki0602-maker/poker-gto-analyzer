@@ -623,7 +623,186 @@ Q♦
 BBokayama Fold
 Result
 tatataaa wins 8.7bb
-Rake: 0.46bb"""
+Rake: 0.46bb""",
+
+        # Hand 7
+        """Hand #YRmPovMwgcsNTzrICnJM
+
+2026/02/09 09:08 · 6-Max NLH (0.5/1)
+SB
+tarosushi
+(100bb)
+Q♥
+6♥
+-0.5bb
+BB
+pmpm920
+(100bb)
+Q♣
+6♦
+-1bb
+UTG
+2vP***
+(100bb)
+4♠
+2♠
+±0bb
+HJ
+okayama
+(100bb)
+A♥
+J♠
+-5.75bb
+CO
+Belami
+(100bb)
+K♥
+7♥
++6.6bb
+BTN
+MtH***
+(100bb)
+A♣
+7♣
+±0bb
+Preflop
+UTG2vP*** Fold
+HJokayama Raise 2.5bb
+COBelami Call 2.5bb
+BTNMtH*** Fold
+SBtarosushi Fold
+BBpmpm920 Fold
+Flop
+Q♦
+T♠
+5♥
+HJokayama Check
+COBelami Bet 3.25bb
+HJokayama Call 3.25bb
+Turn
+7♦
+HJokayama Check
+COBelami Bet 6.5bb
+HJokayama Fold
+Result
+Belami wins 12.35bb
+Rake: 0.65bb""",
+
+        # Hand 8
+        """Hand #45fF2HtNDuiSmirnLzPh
+
+2026/02/09 09:09 · 6-Max NLH (0.5/1)
+CO
+YTa***
+(100bb)
+J♠
+T♠
+-2.5bb
+BTN
+okayama
+(100bb)
+A♦
+J♥
++4bb
+SB
+akaao
+(100bb)
+A♠
+7♣
+-0.5bb
+BB
+WALTER
+(100bb)
+K♠
+5♠
+-1bb
+UTG
+maikii
+(100bb)
+T♥
+T♦
+±0bb
+HJ
+R
+(100bb)
+3♣
+2♥
+±0bb
+Preflop
+UTGmaikii Fold
+HJR Fold
+COYTa*** Raise 2.5bb
+BTNokayama Raise 10bb
+SBakaao Fold
+BBWALTER Fold
+COYTa*** Fold
+Result
+okayama wins 6.5bb""",
+
+        # Hand 9
+        """Hand #lz6diHAxhCaTYjtInttt
+
+2026/02/09 09:06 · 6-Max NLH (0.5/1)
+BTN
+Cindy
+(100bb)
+9♦
+9♣
+-2.5bb
+SB
+AREI
+(100bb)
+A♠
+Q♥
+-0.5bb
+BB
+0mF***
+(100bb)
+J♦
+6♣
+-1bb
+UTG
+uUs***
+(100bb)
+8♥
+3♣
+±0bb
+HJ
+pmpm920
+(100bb)
+6♦
+2♥
+±0bb
+CO
+okayama
+(100bb)
+A♦
+K♣
++3.67bb
+Preflop
+UTGuUs*** Fold
+HJpmpm920 Fold
+COokayama Raise 2.5bb
+BTNCindy Call 2.5bb
+SBAREI Fold
+BB0mF*** Fold
+Flop
+J♣
+T♠
+5♦
+COokayama Check
+BTNCindy Check
+Turn
+J♠
+COokayama Check
+BTNCindy Check
+River
+K♠
+COokayama Check
+BTNCindy Check
+Result
+okayama wins 6.17bb
+Rake: 0.33bb"""
 ]
 
 
