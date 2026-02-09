@@ -2,16 +2,36 @@
 
 **トーナメント前に必ず読む！**
 
+## ⚠️ 重要な修正
+
+```
+誤解を招いた点:
+❌ 「Premiumのみplay」→ 運任せになる
+
+正しい理解:
+✅ 「25-30%のハンドをselective play」
+✅ Steal、implied odds、exploitativeを活用
+✅ 運ではなくskillで勝つ
+
+あなたの問題:
+→ Play頻度ではなく「選択」の問題
+→ Weak ace 3-bet、相手signal無視
+→ これを修正すれば同じplay率で勝てる
+```
+
 ---
 
 ## 🔥 5つの絶対ルール（必ず守る）
 
-### Rule #1: Weak Ace 禁止令
+### Rule #1: Smart Hand Selection（賢い選択）
 
 ```
-❌ A9s 以下で 3-bet 絶対禁止
-❌ SB/BB から weak ace で raise 禁止
-✅ Late position からのみ open
+✅ Weak ace (A9s以下) をLate positionからopen OK
+✅ BB defenseでweak aceをcall OK
+❌ Weak aceで3-bet絶対禁止（特にSB/BBから）
+❌ UTG/HJ openに対してweak aceで対抗禁止
+
+重要: Playしないのではなく、「選択的に」play
 ```
 
 ### Rule #2: 相手のシグナル尊重
@@ -50,42 +70,49 @@ Equity < Pot odds → Fold
 
 ## 📊 9-max レンジ（暗記）
 
-### UTG (8%)
+### UTG (10%)
 ```
-✅ JJ+, AKs, AKo, AQs
-❌ それ以外は fold
-```
-
-### MP (10%)
-```
-✅ TT+, AKs-AJs, AKo-AQo
-❌ Weak ace, small pair
+Open: JJ+, AKs-AJs, AKo-AQo, KQs
+3-bet: QQ+, AK
+✅ Tight but playable
 ```
 
-### CO (18%)
+### MP (12%)
 ```
-✅ 88+, A9s+, ATo+, KQs
-⚠️ Suited connector (98s, 87s)
-```
-
-### BTN (25%)
-```
-✅ 66+, A7s+, A9o+, K9s+, KTo+
-✅ Suited connector (76s+)
+Open: TT+, A9s+, AJo+, KQs
+3-bet: JJ+, AK
+✅ やや広がる
 ```
 
-### SB (12%)
+### CO (20%)
 ```
-✅ 99+, AK, AQ
-❌ Weak ace 絶対禁止
-❌ Aggressive play 禁止
+Open: 88+, A7s+, A9o+, KQs-KJs, QJs, JTs
+3-bet: TT+, AK, AQs（selective）
+✅ Position活かす
 ```
 
-### BB Defense
+### BTN (30%)
 ```
-✅ Call range 広い (pot odds 次第)
-❌ 3-bet は premium のみ (QQ+, AK)
-❌ 4-bet は避ける
+Open: 66+, A5s+, A9o+, K9s+, KTo+, QTs+, JTs, 98s, 76s
+3-bet: 99+, AJ+, KQ（selective）
+Steal: K7s+, Q8s+, any suited, 22+
+✅ 最も広い、fold equity活かす
+```
+
+### SB (15%)
+```
+Open: 99+, ATs+, AJo+, KQs
+3-bet: QQ+, AK（premium中心）
+❌ Weak hand 3-betは慎重に
+✅ Call range広い（defense）
+```
+
+### BB Defense (30%)
+```
+Call: 22+, A2s+, A5o+, K5s+, K9o+, Q8s+, QTo+, suited connectors
+3-bet: JJ+, AK, AQs（6-8%のみ）
+❌ 4-betは超慎重に
+✅ Defenseは広く、でも3-betはselective
 ```
 
 ---
@@ -149,11 +176,11 @@ Short: Double up 待つ
 ## 🚨 絶対に避けるべきこと
 
 ```
-❌ 1. A9s 以下で 3-bet
-❌ 2. SB/BB から aggressive play
-❌ 3. 相手 2回 call でも continue
-❌ 4. Pot odds 無視して call
-❌ 5. Weak hand で 3 street ベット
+❌ 1. Weak aceで3-bet（特にSB/BBから）
+❌ 2. 相手2回callでもcontinue
+❌ 3. Pot odds無視してcall
+❌ 4. Position無視してaggressive
+❌ 5. 相手のシグナル無視
 ❌ 6. Tilt
 ```
 
@@ -162,15 +189,71 @@ Short: Double up 待つ
 ## ✅ 積極的にやるべきこと
 
 ```
-✅ 1. Premium hand で value 取る
-✅ 2. Position を活かす
-✅ 3. Check-fold を受け入れる
-✅ 4. Pot odds を計算
-✅ 5. 相手のシグナルを読む
-✅ 6. 冷静に判断
+✅ 1. Late positionからsteal（広いrange）
+✅ 2. Small pairでset mining（implied odds）
+✅ 3. Tight opponentsをbully
+✅ 4. Check-foldを受け入れる
+✅ 5. Pot oddsを計算
+✅ 6. 相手のシグナルを読む
+✅ 7. Positionを最大限活用
+✅ 8. Selectiveにaggressive
+
+重要: Play率25-30%を目指す（運頼みではない）
 ```
 
 ---
+
+## 🎯 Activeにプレイする方法（運頼みではない）
+
+### Steal Opportunities（盗む機会）
+
+**Late positionからのsteal:**
+```
+状況: Fold to CO/BTN, tight blinds
+
+Action: Open 2-2.5bb
+Range: K7s+, Q8s+, J9s+, any suited, 22+, A-anything
+
+成功率: 60-70%のfoldで+1.5bb
+→ 運ではなくfold equity
+
+頻度: 15-25%のハンド
+→ 十分active！
+```
+
+### Set Mining（セットマイニング）
+
+**Small pairでimplied odds:**
+```
+状況: 相手raise, あなた22-77
+
+Action: Call 2-3bb
+条件: 相手stack 40bb以上
+
+Hit率: 12%
+Payoff: 平均20-40bb
+EV: Positive
+
+→ 運ではなく数学
+```
+
+### Float Play（フロートプレイ）
+
+**IPでcall→後で奪う:**
+```
+状況: 相手C-bet, あなたIP
+
+Action: Call → Turn相手check → Bet
+Hand: Any 2 cards（positionで勝つ）
+
+成功率: 50-60%
+→ 運ではなくposition
+
+頻度: 5-10%の機会
+```
+
+**Total play率: 25-30%**
+→ 十分activeで運頼みではない！
 
 ## 💡 Pot Odds クイックリファレンス
 
@@ -215,13 +298,19 @@ Call amount / (Call + Pot) = Pot odds
 1. 深呼吸
 2. Position 確認
 3. Stack size 確認
-4. ルールを思い出す
+4. Opponent type確認（tight/loose）
 
 Decision point:
-1. ルールに照らし合わせる
-2. 数学的に判断
+1. Hand + Position + Situation = Action
+2. 数学的に判断（pot odds）
 3. Emotion を排除
 4. Execute
+
+例：K9s @ BTN, fold to you, tight blinds
+→ Open steal（fold equity高い）
+
+例：A7s @ SB, UTG open
+→ Fold（dominated risk）
 
 After each hand:
 1. 結果を accept
@@ -278,13 +367,16 @@ After each hand:
 ```
 Preflop:
 □ Position 確認
-□ レンジに合っているか
-□ Weak ace ではないか
+□ Hand + Position + Situation = ?
+□ Steal機会か？
+□ Weak aceで3-betしていないか
+□ Implied oddsあるか？
 
 Postflop:
 □ 相手は何回 call したか
 □ Pot size は
 □ Pot odds は（call の時）
+□ Fold equityあるか（bet時）
 □ ルールを守っているか
 ```
 
@@ -371,15 +463,80 @@ Short: Premium hand で push
 
 ---
 
+## 🎯 具体的プレイ例（運ではなくスキル）
+
+### 例1: BTNからのSteal
+```
+状況: Fold to BTN, あなたK8s, tight blinds
+
+❌ 間違い: 「Weak handだからfold」→ 運任せ
+✅ 正解: 「Position + fold equity」→ Open 2bb
+
+期待値:
+Steal成功 65%: +1.5bb
+Postflop 35%: -0.5bb平均
+EV = +0.8bb
+
+→ Skillful play、25-30%の機会
+```
+
+### 例2: Small Pairでの判断
+```
+状況: CO raise 2.5bb, あなた55 @ BTN
+
+❌ 間違い: 「Premiumじゃないからfold」
+✅ 正解: 「Implied odds」→ Call
+
+期待値:
+Hit set 12%: +25bb
+Miss 88%: -2.5bb
+EV = 12%×25 - 88%×2.5 = +0.8bb
+
+→ 数学的に正しい、運ではない
+```
+
+### 例3: Exploitative Aggression
+```
+状況: Tight playerがBB, あなたA5s @ CO
+
+❌ 間違い: 「A5sはweak aceだからfold」
+✅ 正解: 「Tight = fold多い」→ Open steal
+
+期待値:
+Fold 70%: +1.5bb
+Continue 30%: 0bb平均
+EV = +1.05bb
+
+→ Opponent readingでskill、運ではない
+```
+
+### 例4: BB Defense
+```
+状況: BTN open 2.5bb, あなた76s @ BB
+
+❌ 間違い: 「Premiumじゃないからfold」
+✅ 正解: 「Pot odds良い」→ Call
+
+Pot odds: 2.5/(2.5+1+2.5) = 42%
+Win rate vs BTN range: 45%+
+→ Call correct
+
+→ 数学的判断、運ではない
+```
+
 ## 💪 最終チェック - 準備はOK？
 
 ```
 □ 5つの絶対ルールを言える
-□ Weak ace = Fold を理解した
+□ Play率25-30%を目指す（運頼みではない）
+□ Weak ace 3-bet禁止（openはOK）を理解
 □ 相手 2回 call = ブレーキ を覚えた
 □ Pot odds 計算ができる
 □ Position 別レンジを知っている
+□ Steal機会を理解した
+□ Implied oddsを理解した
 □ Check-fold を受け入れた
+□ Selective aggressive を理解した
 □ Mental の準備ができた
 □ Patience を持てる
 □ Process > Result を理解した
